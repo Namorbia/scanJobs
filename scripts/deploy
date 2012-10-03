@@ -81,7 +81,7 @@ git branch -D $BRANCH_NAME
 # running composer.phar update. It will assume it is installing all of the 
 # dependancies new.
 #
-composer.phar update
+composer.phar install 
 
 #
 # Let the user know what happened.
