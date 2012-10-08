@@ -35,7 +35,8 @@ It is a simple web application based on the Silex framework that will scan the j
     	$ app/console.sh makeDatabase
     	$ app/console.sh scan
 
-9. Point a browser to the IP address or domain name you configured the web server to respond to.	
+9. Point a browser to the IP address or domain name you configured the web server to respond to. To show a localized version specify a city, state after the IP address. 
+	http://127.0.0.1/Nashville, TN
 
 If any of these steps fail, stop because the rest won't work either.
 
