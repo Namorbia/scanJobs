@@ -16,7 +16,9 @@ $cityController->addGeocoder($geocoder);
 $app->mount('/jobs/', new Controller\JobsController());
 $app->mount('/cities/', $cityController);
 $app->mount('/companies/', new Controller\CompanyController());
-$app->mount('/', new Controller\IndexController());
+$ic = new Controller\IndexController();
+$ic->addGeocoder(new Calevans\Google\Geocode());
+$app->mount('/',$ic);
 
 /*
  * Do the deed
