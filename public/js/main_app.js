@@ -21,7 +21,7 @@
 		function displayMap() 
 		{
 			storedCity = $(document).data('storedCity');
-			if ((storedCity != null) && (storedCity.results)) {
+			if ((storedCity.message != "No city stored")) {
 				var latLong = new google.maps.LatLng(storedCity.results.latitude, storedCity.results.longitude);
 				var mapZoom = 7;
 			} else {
